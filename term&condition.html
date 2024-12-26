@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Terms of Services</title>
+    <style>
+        .container {
+            margin: 80px auto 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            background-color: #ffe4eb;
+            padding: 15px;
+            border-left: 5px solid #ff005d;
+        }
+
+        .main-content {
+            margin: 100px 5%;
+        }
+
+        .main-content p {
+            text-align: justify;
+        }
+
+        .main-content ul {
+            list-style: disc;
+            padding-left: 40px;
+        }
+
+        .main-content ul ul {
+            list-style: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <nav
+        class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
+        <div class="text-2xl text-bold">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="" class="h-14">
+            </a>
+        </div>
+        <ul class="md:flex hidden text-lg font-semibold">
+            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
+            <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
+            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
+            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./error.html">Career</a></li>
+        </ul>
+        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
+            <a href="./error.html">Login/Signup</a>
+        </div>
+        <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
+            &#8801;
+        </div>
+        <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
+            <div class="flex justify-between ">
+                <div class="text-2xl text-bold">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="" class="h-14">
+                    </a>
+                </div>
+                <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
+                </div>
+            </div>
+            <div class="mt-6 text-lg font-semibold">
+                <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
+                <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
+                <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
+                <a href="./error.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Career</a>
+            </div>
+            <div class="h-[1px] bg-gray-300 "></div>
+            <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
+                <a href="./error.html " style="display:block; width: 100%; height: 100%;">Login/Signup</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container main-content">
+        <p>
+            Welcome to Nimbad Infotech! These terms and conditions outline the rules and regulations for the use of our
+            website and services. By accessing or using our services, you agree to comply with these terms. If you do
+            not agree with any part of these terms, you should not use our services.
+            <a style="color: #1500ff;" class="cursor-pointer hover:text-blue-700" href="https://www.nimbad.com"
+                target="_blank">www.nimbad.com</a>
+        </p>
+
+        <ul>
+            <li>By using the Site, User agrees to follow and be bound by the following terms and conditions and these
+                terms and conditions may be modified at any time by Nimbad InfoTech without any notice to User.</li>
+            <li>To improve customer service: Information you provide allows us to better service you in responding to
+                your customer service requests more efficiently.</li>
+            <li>All content present on this Site is the exclusive property of Nimbad InfoTech including all the
+                software, text, fonts, images, graphics, and content used on this Site.</li>
+            <li>Nimbad InfoTech shall have no responsibility for any damage to User’s computer system or loss of data
+                that results from the download of materials, information from the Site.</li>
+            <li>Dollop InfoTech makes no warranty that:
+                <ul>
+                    <li>(a) the Site will meet your requirements</li>
+                    <li>(b) the Site will be available on an uninterrupted, timely, secure, or error-free basis</li>
+                    <li>(c) the results that may be obtained from the use of the Site or any services offered through
+                        the Site will be accurate or reliable.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- footer section -->
+    <div class="flex flex-col justify-center m-auto w-full bg-[#12445d] ">
+        <div class="w-full  grid md:grid-cols-3 bg-[#12445d] max-w-5xl px-12 py-6 justify-between flex-wrap gap-8 ">
+            <div class="flex flex-col gap-4 text-[#C1C6CE] ml-3">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" class="h-16 w-40">
+                </a>
+
+                <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:infotechnimbad@gmail.com">infotechnimbad@gmail.com</a>
+                </div>
+
+                <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+91 9589859769">+91 7719927679</a>
+                </div>
+
+
+                <div class="flex ml-3   justify-between w-24 text-2xl " style="">
+                    <a href="https://www.linkedin.com/" target="_blank"><i
+                            class="fa-brands fa-linkedin hover:text-[#848588]"></i></a>
+                    <a href="https://www.telegram.com/" target="_blank"><i
+                            class="fa-brands fa-telegram hover:text-[#848588]"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram hover:text-[#848588]"></i></a>
+                </div>
+            </div>
+
+            <div class=" flex flex-col gap-5 bg-[#12445d] text-white ml-3">
+                <div>
+                    <p class="text-xl font-bold text-white ">Company</p>
+                    <div class="w-44 md:w-56  border-yellow-600 border-t-4 mt-2"></div>
+                </div>
+                <div class="flex gap-14">
+                    <div class="flex flex-col gap-2">
+                        <a href="./about.html" class=" hover:text-yellow-500">About us</a>
+                        <a href="./Privacypolicy.html" class=" hover:text-yellow-500">Privacy policy</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="./contact.html" class=" hover:text-yellow-500">Contact us</a>
+                        <a href="./term&condition.html" class=" hover:text-yellow-500">Terms and conditions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex flex-col gap-5 bg-[#12445d] text-white ml-3">
+                <div>
+                    <p class="text-xl font-bold text-white ">Products</p>
+                    <div class="w-44 md:w-56  border-yellow-600 border-t-4 mt-2"></div>
+                </div>
+
+                <div class="flex gap-14">
+                    <div class="flex flex-col gap-2">
+                        <a href="./skilllab.html" class=" hover:text-yellow-500">Skill Lab</a>
+                        <a href="./faq.html" class=" hover:text-yellow-500">FAQ</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="./services.html" class=" hover:text-yellow-500">Services</a>
+                        <a href="./error.html" class=" hover:text-yellow-500">Blogs</a>
+                    </div>
+                </div>
+            </div>
+
+            
+           
+        </div>
+        <div class="text-center text-[#C1C6CE] mt-4">
+            &copy; 2024 All rights reserved. Nimbad Infotech
+        </div>
+    </div>
+</body>
+
+</html>

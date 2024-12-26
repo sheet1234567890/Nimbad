@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - IT Organization</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+ <style>
+    .hidden-q {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+ </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav
+    class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
+    <div class="text-2xl text-bold">
+        <!-- Xeleratecareer -->
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="" class="h-14">
+        </a>
+    </div>
+    <ul class="md:flex hidden text-lg font-semibold">
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./error.html">Career</a></li>
+    </ul>
+    <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
+        <a href="./error.html">Login/Signup</a>
+    </div>
+    <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
+        &#8801;
+    </div>
+    <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
+        <div class="flex justify-between ">
+            <div class="text-2xl text-bold">
+                <!-- Xeleratecareer -->
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" class="h-14">
+                </a>
+            </div>
+            <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
+                <!-- &#8801; -->
+                <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
+            </div>
+        </div>
+        <div class="mt-6 text-lg font-semibold">
+            <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
+            <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
+            <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
+            <a href="./error.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Career</a>
+        </div>
+        <div class="h-[1px] bg-gray-300 "></div>
+        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
+            <!-- <a href="./error.html " style="display:block; width: 100%; height: 100%;">Login/Signup</a> -->
+        </div>
+    </div>
+</nav>
+  
+    <!-- FAQ Section -->
+    <section class="container  mx-auto py-12 px-4 mt-10">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What services does your organization provide?</span>
+                    <i class="fa-solid fa-chevron-down" id="icon-1"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600" id="content-1">
+                    Our organization provides IT consulting, software development, cloud solutions, and IT support services to help businesses succeed in the digital era.
+                </div>
+            </div>
+            
+
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>How can I contact your support team?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    You can contact our support team via email at infotechnimbad@gmail.com or by phone at +91 7719927679.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>Do you offer customized software solutions?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    Yes, we specialize in creating customized software solutions tailored to meet the unique needs of our clients.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What industries do you serve?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    We serve various industries including healthcare, finance, retail, manufacturing, and education.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What services does your organization provide?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    Our organization provides IT consulting, software development, cloud solutions, and IT support services to help businesses succeed in the digital era.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>How can I contact your support team?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    You can contact our support team via email at infotechnimbad@gmail.com or by phone at +91 7719927679.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>Do you offer customized software solutions?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    Yes, we specialize in creating customized software solutions tailored to meet the unique needs of our clients.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What industries do you serve?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    We serve various industries including healthcare, finance, retail, manufacturing, and education.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What services does your organization provide?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    Our organization provides IT consulting, software development, cloud solutions, and IT support services to help businesses succeed in the digital era.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>How can I contact your support team?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden px-6 py-4 text-gray-600">
+                    You can contact our support team via email at infotechnimbad@gmail.com or by phone at +91 7719927679.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>Do you offer customized software solutions?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    Yes, we specialize in creating customized software solutions tailored to meet the unique needs of our clients.
+                </div>
+            </div>
+            <div class="border-b border-gray-200">
+                <button class="w-full text-left px-6 py-4 text-lg font-medium text-gray-700 hover:bg-gray-100 focus:outline-none flex justify-between items-center">
+                    <span>What industries do you serve?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="hidden-q px-6 py-4 text-gray-600">
+                    We serve various industries including healthcare, finance, retail, manufacturing, and education.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="flex flex-col justify-center m-auto w-full bg-[#12445d] ">
+        <div class="w-full  grid md:grid-cols-3 bg-[#12445d] max-w-5xl px-12 py-6 justify-between flex-wrap gap-8 ">
+            <div class="flex flex-col gap-4 text-[#C1C6CE] ml-3">
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" class="h-16 w-40">
+                </a>
+
+                <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:infotechnimbad@gmail.com">infotechnimbad@gmail.com</a>
+                </div>
+
+                <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+91 9589859769">+91 7719927679</a>
+                </div>
+
+
+                <div class="flex ml-3   justify-between w-24 text-2xl " style="">
+                    <a href="https://www.linkedin.com/" target="_blank"><i
+                            class="fa-brands fa-linkedin hover:text-[#848588]"></i></a>
+                    <a href="https://www.telegram.com/" target="_blank"><i
+                            class="fa-brands fa-telegram hover:text-[#848588]"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram hover:text-[#848588]"></i></a>
+                </div>
+            </div>
+
+            <div class=" flex flex-col gap-5 bg-[#12445d] text-white ml-3">
+                <div>
+                    <p class="text-xl font-bold text-white ">Company</p>
+                    <div class="w-44 md:w-56  border-yellow-600 border-t-4 mt-2"></div>
+                </div>
+                <div class="flex gap-14">
+                    <div class="flex flex-col gap-2">
+                        <a href="./about.html" class=" hover:text-yellow-500">About us</a>
+                        <a href="./Privacypolicy.html" class=" hover:text-yellow-500">Privacy policy</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="./contact.html" class=" hover:text-yellow-500">Contact us</a>
+                        <a href="./term&condition.html" class=" hover:text-yellow-500">Terms and conditions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex flex-col gap-5 bg-[#12445d] text-white ml-3">
+                <div>
+                    <p class="text-xl font-bold text-white ">Products</p>
+                    <div class="w-44 md:w-56  border-yellow-600 border-t-4 mt-2"></div>
+                </div>
+
+                <div class="flex gap-14">
+                    <div class="flex flex-col gap-2">
+                        <a href="./skilllab.html" class=" hover:text-yellow-500">Skill Lab</a>
+                        <a href="./faq.html" class=" hover:text-yellow-500">FAQ</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <a href="./services.html" class=" hover:text-yellow-500">Services</a>
+                        <a href="./error.html" class=" hover:text-yellow-500">Blogs</a>
+                    </div>
+                </div>
+            </div>
+
+            
+           
+        </div>
+        <div class="text-center text-[#C1C6CE] mt-4">
+            &copy; 2024 All rights reserved. Nimbad Infotech
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+       <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
