@@ -11,64 +11,56 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
-        }
-    </style>
+    
 </head>
 <body >
 
     <!-- Navbar -->
     <nav
-        class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
-        <div class="text-2xl text-bold">
-        
-            <a href="./index.html">
-                <img src="./images/logo.png" alt="" class="h-14" style="height: 100px; width: 100%;">
-            </a>
-        </div>
-        <ul class="md:flex hidden text-lg font-semibold">
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./error.html">Career</a></li>
-        </ul>
-        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
-            <a href="./error.html">Login/Signup</a>
-        </div>
-        <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
-            &#8801;
-        </div>
-        <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
-            <div class="flex justify-between ">
-                <div class="text-2xl text-bold">
-                    <!-- Xeleratecareer -->
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="" class="h-14">
-                    </a>
-                </div>
-                <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
-                    <!-- &#8801; -->
-                    <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
-                </div>
+    class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
+    <div class="text-2xl text-bold">
+    
+        <a href="./index.html">
+            <img src="./images/logo.png" alt="" class="h-14">
+        </a>
+    </div>
+    <ul class="md:flex hidden text-lg font-semibold">
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./services.html">Service</a></li>
+    </ul>
+    <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
+        <a href="./error.html">Login/Signup</a>
+    </div>
+    <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
+        &#8801;
+    </div>
+    <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
+        <div class="flex justify-between ">
+            <div class="text-2xl text-bold">
+                <!-- Xeleratecareer -->
+                <a href="./index.html">
+                    <img src="./images/logo.png" alt="" class="h-14">
+                </a>
             </div>
-            <div class="mt-6 text-lg font-semibold">
-                <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
-                <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
-                <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
-                <a href="./error.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Career</a>
-            </div>
-            <div class="h-[1px] bg-gray-300 "></div>
-            <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
-                <a href="./error.html " style="display:block; width: 100%; height: 100%;">Login/Signup</a>
+            <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
+                <!-- &#8801; -->
+                <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
             </div>
         </div>
-    </nav>
+        <div class="mt-6 text-lg font-semibold">
+            <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
+            <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
+            <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
+            <a href="./error.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Career</a>
+        </div>
+        <div class="h-[1px] bg-gray-300 "></div>
+        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
+            <a href="./error.html " style="display:block; width: 100%; height: 100%;">Login/Signup</a>
+        </div>
+    </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="bg-[#12445d] py-16 text-white">
@@ -88,7 +80,7 @@
                     <i class="fas fa-cogs text-4xl text-[#12445d] mb-4"></i>
                     <h4 class="text-xl font-semibold text-gray-800">Software Development</h4>
                     <p class="text-gray-600 mt-2">We create custom software solutions to meet your unique business needs. Our team specializes in scalable, secure, and high-performance applications.</p>
-                    <a href="#software" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a>
+                    <!-- <a href="#software" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a> -->
                 </div>
 
                 <!-- Consultancy Card -->
@@ -96,15 +88,15 @@
                     <i class="fas fa-briefcase text-4xl text-[#12445d] mb-4"></i>
                     <h4 class="text-xl font-semibold text-gray-800">Consultancy</h4>
                     <p class="text-gray-600 mt-2">Our consultancy services help you navigate the complexities of the tech world. Whether it's digital transformation or IT strategy, we provide actionable insights to drive your success.</p>
-                    <a href="#consultancy" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a>
+                    <!-- <a href="#consultancy" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a> -->
                 </div>
 
                 <!-- Recruitment Card -->
                 <div class="bg-white shadow-lg rounded-lg p-6  transition duration-500 hover:scale-105 hover:shadow-xl fade-in-up">
                     <i class="fas fa-users text-4xl text-[#12445d] mb-4"></i>
-                    <h4 class="text-xl font-semibold text-gray-800">Recruitment</h4>
+                    <h4 class="text-xl font-semibold text-gray-800">Recruitment Solution</h4>
                     <p class="text-gray-600 mt-2">We provide recruitment services for IT companies, connecting you with top talent. From developers to IT managers, we have the right professionals for your needs.</p>
-                    <a href="#recruitment" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a>
+                    <!-- <a href="#recruitment" class="text-blue-600 mt-4 inline-block hover:underline">Learn More</a> -->
                 </div>
             </div>
         </div>
@@ -115,7 +107,7 @@
         <div class="w-full  grid md:grid-cols-3 bg-[#12445d] max-w-5xl px-12 py-6 justify-between flex-wrap gap-8 ">
             <div class="flex flex-col gap-4 text-[#C1C6CE] ml-3">
                 <a href="./index.html">
-                    <img src="./images/logo.png" alt="" class="h-16 w-40">
+                    <img src="./images/footerlogo.jpg" alt="" class="h-custom">
                 </a>
 
                 <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
@@ -125,7 +117,7 @@
 
                 <div class="hover:text-yellow-500 text-lg font-medium ml-3 flex justify-start items-center gap-x-1">
                     <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+91 9589859769">+91 7719927679</a>
+                    <a href="tel:+91 7719927679">+91 7719927679</a>
                 </div>
 
 

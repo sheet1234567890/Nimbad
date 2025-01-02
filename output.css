@@ -695,6 +695,11 @@ video {
   height: 100vh;
 }
 
+.h-custom
+{
+  height: 2.5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1298,3 +1303,20 @@ video {
     font-size: 48px;
   }
 }
+
+
+/* for faq.html */
+.hidden-q {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* for service html css start */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+/* for service html css end */
