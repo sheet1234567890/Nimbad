@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -27,9 +29,7 @@
             <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
             <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./services.html">Services</a></li>
         </ul>
-        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
-            <a href="#">Login/Signup</a>
-        </div>
+     
         <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
             &#8801;
         </div>
@@ -53,9 +53,7 @@
                 <a href="./services.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Services</a>
             </div>
             <div class="h-[1px] bg-gray-300 "></div>
-            <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
-                <a href="#" style="display:block; width: 100%; height: 100%;">Login/Signup</a>
-            </div>
+           
         </div>
     </nav>
 
@@ -95,6 +93,64 @@
     </div>
 
 
+    <div class="mx-5 sm:mx-10 md:m-x-20  mb-10">
+        <div class="mt-20 mb-5 w-full flex flex-col justify-center items-center text-2xl font-semibold">
+            <div class="text-3xl sm:text-4xl">Talk to Us</div>
+            <div class="w-28 sm:mt-2 sm:w-56  border-yellow-500 border-2 rounded-md "></div>
+        </div>
+        
+        <div class="flex flex-col-reverse md:flex-row gap-4 ">
+            <div class="font-[14px] font-sans md:w-1/2 pt-10" style="text-align: justify">
+                <span class="text-3xl font-semibold">Get In Touch</span>
+                <div> Nimbad Infotech is a software solution, Consultancy, and Software services company head-quartered in Indore, INDIA .</div>
+                <div class="mt-6">
+                    <h1 class="text-2xl font-semibold">Head Office</h1>
+                    <h3>Nimbad Infotech Pvt Ltd</h3>
+                    <p>105 Maa Suraj Vihar Coloni, Kasturbagram, Indore, Madhya Pradesh, India, 452020.</p>
+                </div>
+            </div>
+            <div class="font-[14px] font-sans md:w-1/2 pt-10" style="text-align: justify">
+                <form id="email-form">
+                    <div  class="form-row">
+                      <!-- Name Field -->
+                      <div class="form-group col-md-12">
+                        <label class="font-medium lable-class" for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <!-- Email Field -->
+                      <div class="form-group col-md-12">
+                        <label class="font-medium lable-class"  for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <!-- Subject Field -->
+                      <div class="form-group col-md-12">
+                        <label class="font-medium lable-class"  for="inputSubject">Subject</label>
+                        <input type="text" class="form-control" id="inputSubject" placeholder="Enter subject" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <!-- Description Field -->
+                      <div class="form-group col-md-12">
+                        <label class="font-medium lable-class"  for="inputDescription">Description</label>
+                        <textarea class="form-control" id="inputDescription" rows="4" placeholder="Enter your message" required></textarea>
+                      </div>
+                    </div>
+                    <!-- Submit Button -->
+                     <div class="text-center" style="margin: 20px;">
+                        <button type="submit" class="btn button-class">Submit</button>
+                     </div>
+                    
+                  </form>
+            </div>
+           
+        </div>
+    </div>
+
+
 
     <!-- footer section -->
     <div class="flex flex-col items-center w-full bg-[#12445d]">
@@ -125,9 +181,9 @@
                     </a>
                 </div>
             </div>
-    
+
             <!-- Second Column -->
-            <div class="flex flex-col gap-5 text-white">
+            <div class="flex flex-col gap-4 text-white">
                 <div>
                     <p class="text-xl font-bold text-white">Company</p>
                     <div class="w-44 md:w-56 border-yellow-600 border-t-4 mt-2"></div>
@@ -143,9 +199,9 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Third Column -->
-            <div class="flex flex-col gap-5 text-white">
+            <div class="flex flex-col gap-4 text-white">
                 <div>
                     <p class="text-xl font-bold text-white">Products</p>
                     <div class="w-44 md:w-56 border-yellow-600 border-t-4 mt-2"></div>
@@ -162,7 +218,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Footer Bottom -->
         <div class="text-center text-[#C1C6CE] mt-4">
             &copy; 2024 All rights reserved. Nimbad Infotech
@@ -170,6 +226,10 @@
     </div>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
 
+
 </html>
+
+

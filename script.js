@@ -1,8 +1,11 @@
- const navDialog = document.getElementById('nav-dialog');
 
-function handleMenu(){
-    navDialog.classList.toggle('hidden');
-}
+            const navDialog = document.getElementById('nav-dialog');
+            function handleMenu() {
+                navDialog.classList.toggle('hidden');  // Toggle the hidden class
+            }
+
+           
+   
 
   // Toggle FAQ answers
   
@@ -62,3 +65,29 @@ function goBack() {
 
 
 
+// for email js 
+  (function() {
+    emailjs.init("TC2FI0Onz9WoGVKUL")// Replace with your Email.js User ID
+  })();
+
+
+
+
+  document.getElementById("email-form").addEventListener("submit", function(event) {
+  
+    event.preventDefault(); 
+
+    emailjs.sendForm("service_s8zb8c8", "template_elwj1md", this)
+      .then(function(response) {
+        alert("Email sent successfully!");
+        document.getElementById("email-form").reset();
+        
+      }, function(error) {
+        alert("Failed to send email. Please try again later.");
+        console.error("Error:", error);
+      });
+  });
+
+
+
+  
