@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -14,79 +15,116 @@
 
 <body>
     <!-- Navbar starts here -->
-    <nav
-        class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
-        <div class="text-2xl text-bold">
+    <nav style="z-index: 1000;"
+    class="flex justify-between border-y border-black items-center md:px-4 px-2 w-full h-16 bg-sky-100 fixed top-0 left-0">
+    <div class="text-2xl text-bold">
 
-            <a href="./index.html">
-                <img src="./images/logo1.png" alt="" class="h-14">
-            </a>
-        </div>
-        <ul class="md:flex hidden text-lg font-semibold">
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
-            <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./services.html">Services</a></li>
-        </ul>
-        <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer md:block hidden">
-            <a href="#">Login/Signup</a>
-        </div>
-        <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
-            &#8801;
-        </div>
-        <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
-            <div class="flex justify-between ">
-                <div class="text-2xl text-bold">
-                    <!-- Xeleratecareer -->
-                    <a href="./index.html">
-                        <img src="./images/logo1.png" alt="" class="h-14">
-                    </a>
-                </div>
-                <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
-                    <!-- &#8801; -->
-                    <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
-                </div>
-            </div>
-            <div class="mt-6 text-lg font-semibold">
-                <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
-                <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
-                <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
-                <a href="./services.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Services</a>
-            </div>
-            <div class="h-[1px] bg-gray-300 "></div>
-            <div class="border rounded-md bg-blue-800 p-2 text-white hover:bg-blue-700 cursor-pointer mt-8 text-center">
-                <a href="#" style="display:block; width: 100%; height: 100%;">Login/Signup</a>
-            </div>
-        </div>
-    </nav>
-    <!-- hero section -->
-    <div class="mt-16  w-full hidden md:flex bg-[#12445D]">
-        <div
-            class="w-1/2 text-white  md:px-5 text-[39px] lg:text-[48px] px-3 flex justify-center flex-col items-center ">
-            <p>Lets's find your</p>
-            <p>dream&nbsp;<span class="text-yellow-400 font-bold">job</span>&nbsp;with&nbsp;<span
-                    class="text-yellow-400 font-bold ">us</span></p>
-        </div>
-        <!-- <p class="w-1/2 text-white  md:px-5 text-[48px] px-3 flex justify-center items-center" style="background-color: #12445D;"> Lets's find your dream &nbsp;<span class="text-yellow-400 font-bold">job</span> &nbsp; with &nbsp;<span class="text-yellow-400 font-bold ">us</span> </p> -->
-        <img class="w-1/2" src="./images/herosectionImg.png" alt="">
+        <a href="./index.html">
+            <img src="./images/logo1.png" alt="" class="h-14">
+        </a>
     </div>
-
-    <div class="mt-16  w-full md:hidden bg-[#12445D]">
-        <img class="" src="./images/herosectionImg2.png" alt="">
-        <div
-            class="h-auto flex flex-col items-center justify-center text-white text-[36px] sm:text-[48px] px-5 py-10 font-sans bg-[#12445D]">
-            <p>Lets's find your</p>
-            <p>dream&nbsp;<span class="text-yellow-400 font-bold">job</span>&nbsp;with&nbsp;<span
-                    class="text-yellow-400 font-bold ">us</span></p>
-
-        </div>
-        <!-- <p class="h-auto flex items-center justify-center text-white text-[28px] sm:text-[36px] px-5 py-10 font-sans" style="background-color: #12445D;"> Lets's find your dream&nbsp;<span class="text-yellow-400 font-bold">job</span>&nbsp;with&nbsp;<span class="text-yellow-400 font-bold ">us</span> </p> -->
+    <ul class="md:flex hidden text-lg font-semibold">
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./index.html">Home</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"> <a href="./about.html">About us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./contact.html">Contact us</a></li>
+        <li class="mx-4 cursor-pointer hover:text-blue-700"><a href="./services.html">Services</a></li>
+    </ul>
+   
+    <div class="md:hidden text-6xl cursor-pointer" onclick="handleMenu()">
+        &#8801;
     </div>
-
+    <div id="nav-dialog" class="fixed md:hidden hidden  bg-white inset-0   px-2 pt-1  ">
+        <div class="flex justify-between ">
+            <div class="text-2xl text-bold">
+                <!-- Xeleratecareer -->
+                <a href="./index.html">
+                    <img src="./images/logo1.png" alt="" class="h-14">
+                </a>
+            </div>
+            <div class="md:hidden text-3xl cursor-pointer mt-2 " onclick="handleMenu()">
+                <!-- &#8801; -->
+                <i class="fa-solid fa-xmark hover:bg-gray-400 hover:text-white px-2 py-1 rounded-3xl"></i>
+            </div>
+        </div>
+        <div class="mt-6 text-lg font-semibold">
+            <a href="./index.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Home</a>
+            <a href="./about.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">About us</a>
+            <a href="./contact.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Contact us</a>
+            <a href="./services.html" class="font-medium m-3 p-3 hover:bg-gray-100 block">Services</a>
+        </div>
+        <div class="h-[1px] bg-gray-700 "></div>
+       
+    </div>
+</nav>
+        <div class="mt-16 w-full md:flex ">
+            <div id="jumbotron"
+                class=" overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center jumbotron w-full ">
+                <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed">
+                    <div class="flex h-full items-center justify-center">
+                        <div id="content" class="text-white">
+                            <h2 id="heading" class="mb-4 mx-2 text-4xl font-semibold"></h2>
+                            <h4 id="subheading" class="mb-6 text-xl font-semibold"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
     <!-- main content -->
     <!-- career transition -->
-    <div class="bg-[#F2F0FF]  grid sm:grid-cols-2 gap-4 mt-6 pb-8">
-        <img src="./images/transition.png" alt="">
+    <div class="bg-[#F2F0FF]  grid sm:grid-cols-2 gap-4  pb-8">
+        <div class="border p-3 flex flex-col gap-2 justify-start items-center">
+            <!-- Card Container -->
+            <div class="grid grid-cols-3 gap-2" style="margin-top:70px">
+                <!-- Card 1 -->
+                <div class="max-w-[200px] bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg w-full h-[100px] object-cover" src="./images/SDE.jpg" alt="Tech Acquisition" />
+                    </a>
+                    <div class="p-3">
+                        <a href="#">
+                            <h5 class="mb-1 text-sm font-bold tracking-tight text-gray-900">Custom Software Development</h5>
+                        </a>
+                        <p class="mb-1 text-xs text-gray-700">Building tailored software solutions to meet unique business needs with innovation and efficiency.</p>
+                        
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="max-w-[200px] bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg w-full h-[100px] object-cover" src="./images/Consultancy.jpg" alt="Tech Trends" />
+                    </a>
+                    <div class="p-3">
+                        <a href="#">
+                            <h5 class="mb-1 text-sm font-bold tracking-tight text-gray-900">IT Consultancy & Strategy</h5>
+                        </a>
+                        <p class="mb-1 text-xs text-gray-700">Providing expert IT consultancy and strategic solutions to drive business growth and innovation.</p>
+                       
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="max-w-[200px] bg-white border border-gray-200 rounded-lg shadow-sm">
+                    <a href="#">
+                        <img class="rounded-t-lg w-full h-[100px] object-cover" src="./images/Recuirement.png" alt="Blockchain" />
+                    </a>
+                    <div class="p-3">
+                        <a href="#">
+                            <h5 class="mb-1 text-sm font-bold tracking-tight text-gray-900">Recruitment & Staffing Solutions</h5>
+                        </a>
+                        <p class="mb-1 text-xs text-gray-700">Expert recruitment and staffing solutions to connect businesses with top talent efficiently.</p>
+                        
+                    </div>
+                </div>
+                
+    
+               
+            </div>
+        </div>
+
+        
+
+
         <div class="border  p-5 flex flex-col gap-4 justify-end items-center">
             <div class="text-5xl font-bold text-[#12445D] max-w-[25rem]">Custom Software & IT Solutions</div>
             <p class="text-[18px] text-[#757575] max-w-96 ">At Nimbad Infotech, we are your trusted partner for custom
@@ -114,84 +152,122 @@
                     software solutions for sustained growth.</p>
                 </div>
            </div>
-       
-       
-        <div class="lg:col-span-7 grid md:grid-cols-2 gap-4 p-4 border order-3 lg:order-2 text-xl">
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-face-grin-stars text-3xl text-orange-800"></i>
-                <p>Secure and Confidential</p>
-            </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-people-line text-purple-800 text-3xl "></i>
-                <p>A Network Built on Excellence</p>
-            </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-sharp fa-solid fa-industry  text-3xl text-yellow-800"></i>
-                <p>Expert IT Consultancy</p>
+
+        <div class="lg:col-span-7 grid md:grid-cols-2 gap-4 p-4 border order-3 lg:order-2 text-xl  ">
+
+            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500  hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class=" fa-solid fa-face-grin-stars text-3xl text-orange-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Secure and Confidential</p>
             </div>
 
+            
+            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500  hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-people-line text-purple-800 text-3xl transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">A Network Built on Excellence</p>
+              </div>
+          
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-sharp fa-solid fa-industry text-3xl text-yellow-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Expert IT Consultancy</p>
+              </div>
 
 
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-comments text-3xl text-cyan-800"></i>
-                <p>Diverse Candidate Profiles</p>
-            </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-address-card text-3xl text-lime-800"></i>
-                <p>Cost and Time Efficiency</p>
-            </div>
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-comments text-3xl text-cyan-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Diverse Candidate Profiles</p>
+              </div>
 
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-user text-3xl text-red-800"></i>
-                <p> Extensive Network of IT Professionals</p>
-            </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-handshake text-3xl text-indigo-800"></i>
-                <p> Streamlined Recruitment Process</p>
-            </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3">
-                <i class="fa-solid fa-anchor text-3xl text-pink-800"></i>
-                <p> Unmatched Expertise in IT Staffing Solutions</p>
-            </div>
 
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-address-card text-3xl text-lime-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Cost and Time Efficiency</p>
+              </div>
+
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-user text-3xl text-red-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Extensive Network of IT Professionals</p>
+              </div>
+          
+           
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-handshake text-3xl text-indigo-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Streamlined Recruitment Process</p>
+              </div>
+          
+           
+              <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg gap-3 hover:shadow-xl transition-all duration-500 hover:scale-102 hover:bg-gradient-to-br hover:from-blue-400 hover:via-indigo-500 hover:to-purple-600">
+                <i class="fa-solid fa-anchor text-3xl text-pink-800 transition-colors duration-500 hover:text-white"></i>
+                <p class="text-gray-800 text-lg font-semibold transition-colors duration-500 hover:text-white">Unmatched Expertise in IT Staffing Solutions</p>
+              </div>
         </div>
 
+        
         <div class=" bg-[#EEEFF4] lg:col-span-5 flex justify-center items-center p-8  lg:pt-4 order-2 lg:order-3">
             <img src="./images/recruiter.jpg" alt="" class=" rounded">
         </div>
     </div>
-    <div class="bg-[#e0e2e6] ">
-        <div class="flex justify-center items-center h-20 md:h-40 flex-col gap-2">
-            <p class="text-3xl sm:text-4xl font-bold">Numerous job categories</p>
-            <div class="w-36 sm:w-52 h1 border-yellow-500 border-2 rounded-md"></div>
+    <div class="bg-[#e0e2e6]">
+        <!-- Header Section -->
+        <div class="flex flex-col justify-center items-center h-20 md:h-40 gap-2">
+            <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">Our Key Differentiators</p>
+            <div class="w-24 sm:w-36 lg:w-52 h-1 bg-yellow-500 rounded-md"></div>
         </div>
-        <div class=" p-4 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-xl">
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">MERN stack</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">MEAN stack</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Data Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Frontend Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Backend Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">DevOps Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Cloud Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">QA Tester</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Human Resources</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Java Developer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Python Developer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Dot Net Developer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">System Engineer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Cyber Security</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">PHP Laravel Developer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">Ruby on Rails Developer
+    
+        <!-- Card Grid Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-10 lg:px-16 py-6">
+            <!-- Card 1 -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card1.jpg" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Turning Ideas into Reality Faster</p>
+                    <p class="text-sm text-gray-600">Accelerate Innovation with Strategic Execution and Cutting-Edge Solutions.</p>
+                </div>
             </div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">UI/UX Designer</div>
-            <div class="bg-white p-2 flex justify-center items-center rounded-md shadow-lg">AI/ML Developer</div>
+        
+            <!-- Card 2 -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card2.jpg" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Accelerate Your Product Development</p>
+                    <p class="text-sm text-gray-600">Speed Up Innovation with Efficient Development and Execution Strategies.</p>
+                </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card3.png" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Build, Test, and Improve Quickly</p>
+                    <p class="text-sm text-gray-600">Rapid Development, Agile Testing, and Continuous Improvement for Success.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card4.png" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Efficient Prototyping for Scalable Solutions</p>
+                    <p class="text-sm text-gray-600">Streamlined Prototyping to Build Scalable and Impactful Solutions Faster.</p>
+                </div>
+            </div>
+            <!-- Card 5  -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card5.jpg" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Agile, Adaptive, and Efficient Prototyping</p>
+                    <p class="text-sm text-gray-600">Prototyping enables rapid iteration, flexibility, and efficiency for successful development.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="flex flex-col md:flex-row bg-white rounded-md shadow-lg text-black transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-md md:max-w-2xl mx-auto">
+                <img class="w-full md:w-40 h-40 md:h-auto rounded-t-md md:rounded-none md:rounded-s-md  object-contain" src="/images/Card6.jpg" alt="Strategic Consulting">
+                <div class="flex flex-col justify-center p-4 md:p-6 text-center md:text-left">
+                    <p class="mb-2 text-lg font-semibold tracking-tight">Fast Iterations for Better Product Refinement</p>
+                    <p class="text-sm text-gray-600">Providing expert solutions for business growth and technology strategy.</p>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- footer section -->
-
-
-
+    <!-- footer section start-->
     <div class="flex flex-col items-center w-full bg-[#12445d]">
         <!-- Content Wrapper -->
         <div class="w-full grid md:grid-cols-3 max-w-5xl px-12 py-6 gap-8 mx-auto">
@@ -264,9 +340,99 @@
         </div>
     </div>
 
+  <!-- footer section end-->
 
+
+
+
+    
 </body>
-<script src="./script.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome CDN for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+
+<script src="script.js"></script>
+
+
+
+  <!-- Swiper JS -->
+ 
+
+  <!-- home 3d  -->
+   <script>
+    const backgrounds = [
+    {
+        class: "url('/images/bg-1.webp')",
+        heading: "Software Consulting and Development",
+        subheading: "We streamline project success.",
+        buttonText: "Get Started"
+    },
+    {
+        class: "url('/images/bg-2.avif')",
+        heading: "Software Consulting and Development",
+        subheading: "Building software that drives real-world impact.",
+        buttonText: "Learn More"
+    },
+    {
+        class: "url('/images/bg-3.jpg')",
+        heading: "Software Consulting and Development",
+        subheading: "Your trusted partner in delivering project success.",
+        buttonText: "Join Us"
+    }
+];
+
+let currentIndex = 0;
+
+function displayCharacters(text, element, delay) {
+    element.innerHTML = ""; // Clear the element
+    text.split("").forEach((char, index) => {
+        const span = document.createElement("span");
+        span.classList.add("char");
+        span.style.animationDelay = `${index * delay}s`;
+
+        // Handle spaces explicitly
+        if (char === " ") {
+            span.innerHTML = "&nbsp;";
+        } else {
+            span.textContent = char;
+        }
+
+        element.appendChild(span);
+    });
+}
+
+function updateContent() {
+    const jumbotron = document.getElementById("jumbotron");
+    const { class: background, heading, subheading } = backgrounds[currentIndex];
+
+    // Update background
+    jumbotron.style.backgroundImage = background;
+
+    // Animate heading character by character
+    const headingElement = document.getElementById("heading");
+    displayCharacters(heading, headingElement, 0.1); // 0.1 seconds delay per character
+
+    // Update subheading and button text
+    document.getElementById("subheading").innerText = subheading;
+  
+}
+
+function cycleBackgrounds() {
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+    updateContent();
+}
+
+// Initialize content on page load
+updateContent();
+
+// Cycle through backgrounds every 5 seconds
+setInterval(cycleBackgrounds, 5000);
+
+
+
+        
+   </script>
+ 
 </html>
